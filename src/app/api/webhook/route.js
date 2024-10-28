@@ -1,8 +1,8 @@
 import { Webhook } from 'svix'
 import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
-import {deleteUser}from '@lib/actions/user/deleteUser'
-import {createorUpdateUser}from '@lib/actions/user/createorUpdateUser'
+import {deleteUser}from '@libs/actions/user/deleteUser'
+import {createorUpdateUser}from '@libs/actions/user/createorUpdateUser'
 
 
 export async function POST(req) {

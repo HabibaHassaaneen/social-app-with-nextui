@@ -1,6 +1,6 @@
 import User from "../models/User";
-import { connectToDatabase } from "@libs/mongodb/mongoose";
 
+import {connectToDatabase} from "../../libs/mongodb/mongoose";
 export const createorUpdateUser = async (
   id,
   first_name,

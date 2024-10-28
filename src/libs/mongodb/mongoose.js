@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 let isConnected = false;
-export const connectToDatabase = async () => {
+export default  connectToDatabase = async () => {
   mongoose.set("strictQuery", true);//That means that all the fields will be saved in the database, even if some of them are not specified in the schema model
   if (isConnected) {
     console.log("Moongo database is already connected");
